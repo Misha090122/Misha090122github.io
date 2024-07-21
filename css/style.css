@@ -52,7 +52,7 @@ div.container {
   margin-top: 5px;
   line-height: 36px;
   color: #fff;
-  background: url(/img/Phone.png) #A98755 15px 45% no-repeat;
+  background: url(img/Phone.png) #A98755 15px 45% no-repeat;
   background-size: 16px;
   text-transform: none;
   font-size: 16px;
@@ -85,12 +85,12 @@ ul {
   position: relative;
 }
 
-#section1 { background:url(/img/section_1_bg.jpg) no-repeat;  background-size: cover; }
+#section1 { background:url(img/section_1_bg.jpg) no-repeat;  background-size: cover; }
 #section1 .container { padding:0; padding-top:70px; padding-bottom:50px; text-align:center; }
 h1 { margin:40px auto 45px auto; color:#a98755; font-size: 56px; font-weight: 400; line-height:72px; text-transform:uppercase; letter-spacing:8px; max-width:1000px; }
 #section1 p.caption { font-family:Georgia; color:#ffffff; font-size:28px; font-style:italic; padding-top:55px; background:url(/images/arrow_2.png) 50% 0 no-repeat; }
 
-#section1.type2 { background:url(/img/section_1_bg.jpg) 0 -70px no-repeat; background-size: cover; padding-bottom:50px; }
+#section1.type2 { background:url(img/section_1_bg.jpg) 0 -70px no-repeat; background-size: cover; padding-bottom:50px; }
 #section1.type2 .container { padding:0; padding-top:30px; padding-bottom:60px; text-align:center; }
 #section1.type2 p { font-size:22px; line-height:28px; font-family: Georgia; font-style: italic; color:#a98755; }
 #section1.type2 .button { height:62px; line-height:56px; padding:1px 0 10px 0; margin-bottom:50px;  }
