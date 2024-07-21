@@ -1,0 +1,392 @@
+/*! HTML5 Boilerplate v9.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 3.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  min-width: 31px;
+  font-family: Open Sans, sans-serif;
+  background: #000;
+  color: #fff;
+  position: relative;
+}
+#nav {
+  position: fixed;
+  z-index: 500;
+  top: 0px;
+  left: 0px;
+  min-height: 52px;
+  padding: 0;
+  background: #000;
+  color: #b08c58;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+div.container {
+  width: 1170px;
+  padding: 0 50px;
+  margin: 0 auto;
+}
+#nav .callback {
+  float: right;
+  width: 176px;
+  padding-left: 20px;
+  height: 40px;
+  margin-top: 5px;
+  line-height: 36px;
+  color: #fff;
+  background: url(/img/Phone.png) #A98755 15px 45% no-repeat;
+  background-size: 16px;
+  text-transform: none;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 3px;
+}
+#nav ul {
+  padding: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  unicode-bidi: isolate;
+}
+
+#nav li {
+  padding: 14px 14px;
+  list-style-type: none;
+  display: inline-block;
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+}
+
+#section1 { background:url(/img/section_1_bg.jpg) no-repeat;  background-size: cover; }
+#section1 .container { padding:0; padding-top:70px; padding-bottom:50px; text-align:center; }
+h1 { margin:40px auto 45px auto; color:#a98755; font-size: 56px; font-weight: 400; line-height:72px; text-transform:uppercase; letter-spacing:8px; max-width:1000px; }
+#section1 p.caption { font-family:Georgia; color:#ffffff; font-size:28px; font-style:italic; padding-top:55px; background:url(/images/arrow_2.png) 50% 0 no-repeat; }
+
+#section1.type2 { background:url(/img/section_1_bg.jpg) 0 -70px no-repeat; background-size: cover; padding-bottom:50px; }
+#section1.type2 .container { padding:0; padding-top:30px; padding-bottom:60px; text-align:center; }
+#section1.type2 p { font-size:22px; line-height:28px; font-family: Georgia; font-style: italic; color:#a98755; }
+#section1.type2 .button { height:62px; line-height:56px; padding:1px 0 10px 0; margin-bottom:50px;  }
+
+
+@media (max-width: 1280px) {
+  div.container {
+    width: 950px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 650px) {
+  #nav {
+    font-size: 16px;
+    min-height: 45px;
+  }
+}
+
+@media (max-width: 1000px) {
+  #nav.type1 .container {
+    width: 98%;
+  }
+}
+@media (max-width: 800px) {
+  div.container {
+    width: 100%;
+    min-width: 320px;
+    padding: 0;
+  }
+}
+@media (max-width: 390px) {
+  #nav {
+    font-size: 12px;
+    min-height: 40px;
+  }
+}
+@media (max-width: 1280px) {
+  #nav.type1 li {
+    padding: 14px 10px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 470px) {
+  #nav .callback {
+    margin-top: 7px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 650px) {
+  #nav .callback {
+    float: right;
+    width: 40px;
+    padding-left: 0px;
+    height: 30px;
+    margin-top: 10px;
+    line-height: 36px;
+    color: #fff;
+    background: url(/img/Phone.png) #A98755 12px 45% no-repeat;
+    background-size: 16px;
+    text-transform: none;
+    font-size: 0px;
+    text-align: center;
+    border-radius: 3px;
+  }
+}
+
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .visually-hidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visually-hidden.focusable:active,
+.visually-hidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * The use of `table` rather than `block` is only necessary if using
+ * `::before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
